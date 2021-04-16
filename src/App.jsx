@@ -5,14 +5,14 @@ import React from 'react';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="container">
       <h2>True request</h2>
       <Test url='http://localhost:7070/data'/>
       <h2>Error request</h2>
       <Test url='http://localhost:7070/error'/>
       <h2>Request with timeout(loading Test)</h2>
       <Test url='http://localhost:7070/loading'/>
-    </React.Fragment>
+    </div>
   );
 }
 
